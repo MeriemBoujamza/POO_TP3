@@ -2,10 +2,7 @@
 
 C'est un projet qui permet d'evaluer les connaissances acquises lors des TPs ...
 
-![Interface](https://ibb.co/QYnt81j
-https://ibb.co/ZKpQckP)
-
-
+![Interface](https://ibb.co/QYnt81j)
 
 
 ## Dependencies (definitions)
@@ -28,7 +25,7 @@ Thymeleaf : Thymeleaf est un moteur de template Java pour les applications web. 
 
 ## reponses de questions
 
- ###Etape 13 :
+ ### Etape 13 :
 Nous avons le controlleur : 
 @Controller
 public class HelloWorldController {
@@ -51,12 +48,12 @@ Avec la méthode "return "greeting";" nous avons choisi le fichier HTML à affic
  en utilisant le paramètre @RequestParam de la méthode greeting(). Le paramètre "nameGET" est utilisé pour récupérer la valeur passée dans l'url sous forme de query parameter "name". Ensuite, cette valeur est ajoutée au modèle avec "model.addAttribute("nomTemplate", nameGET);" puis est passée à la vue pour être affichée.
 
 
- ###Etape 17 : (http://localhost:8080/h2-console/login.do?jsessionid=08cdc58b385b27514b97ff13fd675c11)
+ ### Etape 17 : (http://localhost:8080/h2-console/login.do?jsessionid=08cdc58b385b27514b97ff13fd675c11)
 Relancez-votre application, retournez sur la console de H2 : http://localhost:8080/h2-console. Avez-vous remarqué une différence ? 
 
 on trouve qu'une nouvelle table ADDRESS derivee de la class Address est ajoutée automatiquement
 
-###Etape 18 :
+### Etape 18 :
 
 Expliquez l'apparition de la nouvelle table en vous aidant de vos cours sur Hibernate, et de la dépendance Hibernate de Spring.
 
@@ -65,11 +62,11 @@ La classe Adress avait l'annotation @Entity qui sera utilisée pour générer de
 Les champs sont annotés par : @Id pour la clé primaire, @Column pour les colonnes, et @ManyToOne pour les relations.
  l'application et les tables seront créées automatiquement par Hibernate lors du démarrage.
 
-###Etape 19 :
+### Etape 19 :
 Faites une requête de type SELECT sur la table Adress. Voyez-vous tout le contenu de data.sql ?
 oui, ça marche parfaitement !
 
-###Etape 22 :
+### Etape 22 :
 Pouvez-vous trouver à quoi sert l'annotation @Autowired du code précèdent sur internet ? 
 
 L'annotation @Autowired est utilisée pour injecter des dépendances dans les classes de l' application. Il permet de demander à Spring de fournir une instance d'une classe dépendante (ou d'une interface) pour une classe qui en a besoin.
@@ -77,7 +74,7 @@ Spring va automatiquement créer une instance de l'objet nécessaire et l'inject
 
 
 
-###Etape 30
+### Etape 30
 Expliquez la méthode que vous avez utilisé pour ajouter Bootstrap :
 
 j'ai simplement ajouter les CDN et les scripts associés à bootstrap ci-dessous à la partie head de la page HTML :
