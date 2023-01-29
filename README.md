@@ -2,12 +2,10 @@
 
 C'est un projet qui permet d'evaluer les connaissances acquises lors des TPs ...
 
-<<<<<<< HEAD
 # LIEN GITHUB : https://github.com/MeriemBoujamza/POO_TP3 
 =======
 ![Interface](https://i.ibb.co/BTjF4SK/2.png)
->>>>>>> 5087ec08723e10a9110ca5e287a13db3db8d482b
-
+![Interface](https://i.ibb.co/f0vPC23/1.png)
 
 ## Dependencies (definitions)
 
@@ -100,15 +98,21 @@ j'ai simplement ajouter les CDN et les scripts associés à bootstrap ci-dessous
 ## PARTIE 2 : Etape 6 (reponnses aux questions)
 
  Faut-il une clé API pour appeler MeteoConcept ?
+ 
 	oui,pour utiliser l'API de MeteoConcept, il est nécessaire d'avoir une clé API valide. 
 
+
  Quelle URL appeler ?
+ 
 	 L'URL suivant : https://api.meteo-concept.com/api/forecast/daily
+	 
  Quelle méthode HTTP utiliser ?
+ 
 	on utilise la methode GET
 
  Comment passer les paramètres d'appels ?
-	 il faut les inclure dans l'URL de la maniere suivante:  "https://api.meteo-concept.com/api/forecast/daily?token="+METEO_API_TOKEN+"&latlng="+latitude+","+longitude+"&world=false&start=0&end=1"
+ 
+	 il faut les inclure dans l'URL de la maniere suivante:  "https://api.meteo-concept.com/api/forecast/daily token="+METEO_API_TOKEN+"&latlng="+latitude+","+longitude+"&world=false&start=0&end=1"
 
  Où est l'information dont j'ai besoin dans la réponse :
 
@@ -117,6 +121,7 @@ j'ai simplement ajouter les CDN et les scripts associés à bootstrap ci-dessous
 
  Pour afficher la prévision de météo du lieu visé par les coordonnées GPS
   	response.getBody().getForecast(lat,lon).getCity().getName()
+	
 ## Auteur
 
 
