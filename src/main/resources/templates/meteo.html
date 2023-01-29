@@ -64,7 +64,12 @@
                 </div>
               </div>
               <div>
-               <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+              
+              
+               <img th:if="${temp} <= 3" src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                  width="100px">
+                  
+                   <img th:if="${temp} > 3"  src="https://static.vecteezy.com/system/resources/previews/009/344/657/non_2x/sun-transparent-background-free-png.png"
                   width="100px">
               </div>
             </div>
